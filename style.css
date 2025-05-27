@@ -502,16 +502,7 @@ body{
         width: 200px;
         height: 200px;
     }
-    
-    .result {
-        width: 90%;
-        left: 5%;
-        top: 200px;
-        height: auto;
-        padding: 20px 0;
-    }
-    
-    .bonus {
+     .bonus {
         position: static;
         margin: 20px auto;
         display: block;
