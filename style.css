@@ -1,0 +1,621 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+body{
+	background-color: rgb( 25, 38, 71);
+}
+.name{
+	width: 705px;
+    height: 150px;
+	margin: 0 auto;
+	border-radius: 15px;
+	border: 3px solid rgb(95, 103, 125);
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	padding-top: 25px;
+	padding-left: 37px;
+	padding-bottom: 25px;
+}
+.score{
+	background-color: rgb(242, 242, 242);
+	width: 130px;
+	height: 100px;
+	border-radius: 15px;
+	margin-top: 22px;
+	margin-right: 37px;
+	text-align: center;
+}
+.text{
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-size: 18px;
+	font-style: normal;
+	letter-spacing: 2px;
+	color: #192444;
+	margin-top: 15px;
+}
+.numbers{
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-size: 33px;
+	font-style: normal;
+	letter-spacing: 2px;
+	color: rgb(104, 101, 107);
+	margin-top: 8px;
+}
+.game{
+	background-image: url(images/bg-triangle.svg); 
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 330px 270px;
+	margin: 0 auto;
+	width: 390px;
+	height: 350px;
+	margin-top: 110px;
+}
+.button1{
+	background-color: white;
+	border: 20px solid #516df2;
+	height: 150px;
+	width: 150px;
+	border-radius: 80px;
+}
+.button2{
+	background-color: white;
+	border: 20px solid #eba418;
+	height: 150px;
+	width: 150px;
+	border-radius: 80px;
+}
+.button3{
+	background-color: white;
+	border: 20px solid #df3a58;
+	height: 150px;
+	width: 150px;
+	border-radius: 80px;
+}
+.buttons{
+	display: flex;
+	justify-content: space-between;
+}
+.button{
+	margin: 0 auto;
+    margin-left: 120px;
+	margin-top: 50px;
+}
+.rules_button{
+	background-color: #192444;
+	border: 2px solid white;
+    width: 130px;
+	height: 40px;
+	color: white;
+	border-radius: 13px;
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+}
+.rules{
+	display: flex;
+	justify-content: right;
+	margin-right: 50px;
+}
+.none_block{
+	background-color: white;
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 38px;
+	width: 405px;
+	height: 415px;
+	color: #394263;
+	border-radius: 20px;
+	position: absolute;
+	top: 180px;
+	bottom: 0px;
+	left: 540px;
+}
+.text1{
+	padding-top: 38px;
+	padding-left: 40px;
+}
+.close{
+	width: 27px;
+	height: 27px;   
+}
+.button_close{
+	margin-top: 47px;
+	margin-right: 40px;
+}
+.button1:hover{
+	box-shadow: 1px 2px 20px 49px rgba(8, 93, 159, 0.29);
+}
+.button2:hover{
+	box-shadow: 1px 2px 20px 49px rgba(255, 241, 15, 0.29);
+}
+.button3:hover{
+	box-shadow: 1px 2px 20px 49px rgba(211, 9, 9, 0.29);
+}
+.rules_img{
+	width: 290px;
+	height: 280px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.rules_close{
+	display: flex;
+	justify-content: space-between;
+}
+.extra{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+.bonus{
+	background-color: #192444;
+	border: 2px solid white;
+    width: 130px;
+	height: 40px;
+	color: white;
+	border-radius: 13px;
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 1px;
+	margin-left: 50px;
+	position: absolute;
+	top: 660px;
+}
+.result {
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 30px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -45%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+.result-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.player-choice, .computer-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.player-choice p, .computer-choice p {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    font-size: 24px;
+    color: #394263;
+    text-align: center;
+}
+
+.player-choice {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+.computer-choice {
+    animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.result-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-message h2 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 32px;
+    font-weight: 700;
+    color: #192444;
+    margin-bottom: 25px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.play-again {
+    background-color: #192444;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.play-again:hover {
+    background-color: #2a3a6a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.play-again:active {
+    transform: translateY(1px);
+}
+
+.paper-result, .scissors-result, .rock-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.paper-result { border: 18px solid #516df2; background: linear-gradient(to bottom, #fff, #f5f5f5); }
+.scissors-result { border: 18px solid #eba418; background: linear-gradient(to bottom, #fff, #f5f5f5); }
+.rock-result { border: 18px solid #df3a58; background: linear-gradient(to bottom, #fff, #f5f5f5); }
+
+.paper-result:hover, .scissors-result:hover, .rock-result:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 850px) {
+    .result {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .choices {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .player-choice, .computer-choice {
+        gap: 10px;
+    }
+    
+    .result-message h2 {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+}
+/* Мобильные устройства (до 576px) */
+@media (max-width: 575.98px) {
+    .name {
+        width: 90%;
+        height: 120px;
+        margin-top: 20px;
+    }
+    .gameplay{
+		width: 40px;
+	}
+    .logo {
+        padding: 15px;
+        width: 50%;
+    }
+    
+    .logo img {
+        width: 100%;
+    }
+    
+    .score {
+        width: 100px;
+        height: 80px;
+        margin-top: 18px;
+        margin-right: 15px;
+    }
+    
+    .text {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    .numbers {
+        font-size: 24px;
+    }
+    
+    .game {
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+        background-size: 250px 200px;
+    }
+    
+    .button1, .button2, .button3 {
+        height: 100px;
+        width: 100px;
+        border-width: 15px;
+    }
+    
+    .button {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttons {
+        width: 280px;
+		justify-content: space-between;
+		margin: 0 auto;
+    }
+    
+    .rules {
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+    
+    .none_block {
+        width: 90%;
+        left: 5%;
+        top: 100px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    .rules_img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .result {
+        width: 90%;
+        left: 5%;
+        top: 200px;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .bonus {
+        position: static;
+        margin: 20px auto;
+        display: block;
+    }
+	.extra{
+		max-height: 450px;
+	}
+}
+
+/* Планшеты (от 576px до 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .name {
+        width: 90%;
+    }
+    
+    .game {
+        width: 100%;
+        background-size: 280px 230px;
+    }
+    
+    .none_block {
+        width: 80%;
+        left: 10%;
+    }
+    
+    .result {
+        width: 80%;
+        left: 10%;
+    }
+	.button {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttons {
+        width: 370px;
+		justify-content: space-between;
+		margin: 0 auto;
+    }
+}
+
+/* Небольшие десктопы (от 768px до 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .name {
+        width: 90%;
+    }
+    
+    .none_block {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .result {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Большие десктопы (от 992px до 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .name {
+        width: 80%;
+    }
+    
+    .none_block {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .result {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Очень большие экраны (от 1200px) */
+@media (min-width: 1200px) {
+    /* Здесь можно оставить стили как есть или добавить дополнительные корректировки */
+}
+
+/* Особые адаптации для ландшафтной ориентации на мобильных */
+@media (max-height: 600px) and (orientation: landscape) {
+    .name {
+        margin-top: 10px;
+        height: 100px;
+    }
+    
+    .score {
+        height: 70px;
+        margin-top: 13px;
+    }
+    
+    .game {
+        margin-top: 30px;
+        height: 250px;
+    }
+    
+    .none_block {
+        top: 50px;
+    }
+    
+    .result {
+        top: 100px;
+    }
+}

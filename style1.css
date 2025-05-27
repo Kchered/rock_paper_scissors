@@ -1,0 +1,492 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+body{
+	background-color: rgb( 25, 38, 71);
+}
+.name{
+	max-width: 705px;
+    height: 150px;
+	margin: 0 auto;
+	border-radius: 15px;
+	border: 3px solid rgb(95, 103, 125);
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	padding-top: 25px;
+	padding-left: 37px;
+	padding-bottom: 25px;
+}
+.score{
+	background-color: rgb(242, 242, 242);
+	width: 130px;
+	height: 100px;
+	border-radius: 15px;
+	margin-top: 22px;
+	margin-right: 37px;
+	text-align: center;
+}
+.text{
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-size: 18px;
+	font-style: normal;
+	letter-spacing: 2px;
+	color: #192444;
+	margin-top: 15px;
+}
+.numbers{
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-size: 33px;
+	font-style: normal;
+	letter-spacing: 2px;
+	color: rgb(104, 101, 107);
+	margin-top: 8px;
+}
+.game{
+	background-image: url(images/bg-pentagon.svg); 
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 329px 313px;
+	margin: 0 auto;
+	width: 390px;
+	height: 350px;
+	margin-top: 110px;
+}
+.button1{
+	background-color: white;
+	border: 20px solid #516df2;
+	height: 133px;
+	width: 133px;
+	border-radius: 80px;
+	margin-left: 128px;
+}
+.button2{
+	background-color: white;
+	border: 20px solid #f6ac19;
+	height: 133px;
+	width: 133px;
+	border-radius: 80px;
+	margin-left: 10px;
+	margin-bottom: 7px;
+}
+.button3{
+	background-color: white;
+	border: 20px solid #df3a58;
+	height: 133px;
+	width: 133px;
+	border-radius: 80px;
+	margin-left: 70px;
+}
+.buttons{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 410px;
+}
+.button{
+	margin: 0 auto;
+    margin-left: 120px;
+	margin-top: 50px;
+}
+.button1:hover{
+	box-shadow: 1px 2px 20px 49px rgba(8, 93, 159, 0.29);
+}
+.button2:hover{
+	box-shadow: 1px 2px 20px 49px rgba(255, 241, 15, 0.29);
+}
+.button3:hover{
+	box-shadow: 1px 2px 20px 49px rgba(211, 9, 9, 0.29);
+}
+.button4:hover{
+	box-shadow: 0px 0px 26px 45px rgba(10, 202, 222, 0.2);
+}
+.button5:hover{
+	box-shadow: 0px 0px 22px 45px rgba(255, 0, 247, 0.2);
+}
+.rules_button{
+	background-color: #192444;
+	border: 2px solid white;
+    width: 130px;
+	height: 40px;
+	color: white;
+	border-radius: 13px;
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+}
+.rules{
+	display: flex;
+	justify-content: right;
+	margin-right: 50px;
+}
+.none_block{
+	background-color: white;
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 38px;
+	width: 405px;
+	height: 415px;
+	color: #394263;
+	border-radius: 20px;
+	position: absolute;
+	top: 180px;
+	bottom: 0px;
+	left: 540px;
+	
+}
+.text1{
+	padding-top: 38px;
+	padding-left: 40px;
+}
+.close{
+	width: 27px;
+	height: 27px;   
+}
+.button_close{
+	margin-top: 47px;
+	margin-right: 40px;
+}
+.rules_img{
+	width: 290px;
+	height: 280px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 17px;
+}
+.rules_close{
+	display: flex;
+	justify-content: space-between;
+}
+.extra{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+.button4{
+	background-color: white;
+	border: 20px solid #51d4f2;
+	height: 133px;
+	width: 133px;
+	border-radius: 80px;
+}
+.button5{
+	background-color: white;
+	border: 20px solid #b751f2;
+	height: 133px;
+	width: 133px;
+	border-radius: 70px;
+}
+.buttons1{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 560px;
+	margin-left: 28px;
+}
+.original{
+	background-color: #192444;
+	border: 2px solid white;
+    width: 130px;
+	height: 40px;
+	color: white;
+	border-radius: 13px;
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 1px;
+	margin-left: 50px;
+	position: absolute;
+	top: 660px;
+}
+.bonus-result {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.bonus-result-content {
+    background-color: white;
+    width: 900px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.bonus-choices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.player-choice, .computer-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.choice-name {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-size: 24px;
+    color: #394263;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.result-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    text-align: center;
+}
+
+.result-message h2 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 42px;
+    font-weight: 700;
+    color: #192444;
+    margin-bottom: 10px;
+}
+
+.rules-text {
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    color: #516df2;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.play-again {
+    background-color: #192444;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.play-again:hover {
+    background-color: #2a3a6a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 950px) {
+    .bonus-result-content {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    
+    .bonus-choices {
+        flex-direction: column;
+    }
+    
+    .result-message {
+        order: 3;
+        margin: 20px 0;
+    }
+    
+    .player-choice, .computer-choice {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .choice-name {
+        margin-top: 0;
+        width: 100px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    .player-choice, .computer-choice {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .choice-name {
+        text-align: center;
+        width: auto;
+    }
+    
+    .result-message h2 {
+        font-size: 32px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.name{
+		min-width: 400px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.rules{
+        margin-top: 70px;
+	}
+	.original{
+		margin-top: 70px;
+	}
+	.none_block{
+		left: 90px;
+	}
+}
+@media (max-width: 575.98px) {
+	.name{
+		min-width: 300px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	
+	.none_block{
+		width: 90%;
+        left: 5%;
+        top: 100px;
+        height: 450px;
+        padding-bottom: 20px;
+	}
+	.rules {
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+	.original{
+        position: static;
+        margin: 20px auto;
+        display: block;
+		margin-top: 50px;
+    }
+}
